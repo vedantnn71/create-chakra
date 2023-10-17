@@ -1,7 +1,7 @@
 import { UserInput } from "../config";
 import resolvePacakgeManager from "../../utils/resolvePackageManager";
 
-function createReactCommand(input: UserInput) {
+function createVueCommand(input: UserInput) {
   const { packageManager, appConfig, projectName } = input;
 
   const parts: string[] = [resolvePacakgeManager(packageManager)];
@@ -17,4 +17,4 @@ function createReactCommand(input: UserInput) {
   return parts.join(" ");
 }
 
-export default createReactCommand;
+export default createVueCommand;
